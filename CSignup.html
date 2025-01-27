@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer SignUp</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+    h1, p {
+        color: #343a40;
+    }
+    form {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 40%;
+        margin: 50px auto;
+        text-align: left;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        font-size: 14px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <center>
+        <form action="cln" method="post">
+            <h2>Customer SignUp</h2>
+            Username:<input type="text" name="cname"><br><br>
+            Password:<input type="text" name="cpwd"><br><br>
+            FirstName:<input type="text" name="cfname"><br><br>
+            LastName:<input type="text" name="clname"><br><br>
+            Address:<input type="text" name="cadd"><br><br>
+            MailId:<input type="text" name="cmail"><br><br>
+            Phone:<input type="text" name="cphone"><br><br>
+            <input type="submit" value="SignUp">
+        </form>
+    </center>
+</body>
+</html>

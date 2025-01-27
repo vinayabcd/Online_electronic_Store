@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Enter Product Details</h1>
+        <form action="aps" method="post">
+            <label for="pcode">Product Code:</label><br>
+            <input type="text" id="pcode" name="pcode" required><br>
+
+            <label for="pname">Product Name:</label><br>
+            <input type="text" id="pname" name="pname" required><br>
+
+            <label for="pcompany">Product Company:</label><br>
+            <input type="text" id="pcompany" name="pcompany" required><br>
+
+            <label for="pprice">Product Price:</label><br>
+            <input type="text" id="pprice" name="pprice" required pattern="^\d+(\.\d{1,2})?$" title="Enter a valid price (e.g., 100.00)"><br>
+
+            <label for="pqty">Product Quantity:</label><br>
+            <input type="text" id="pqty" name="pqty" required pattern="^\d+$" title="Enter a valid quantity"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #dc3545;
+            font-size: 2em;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            color: #495057;
+            background-color: #f8f9fa;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-container {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center class="form-container">
+        <form action="aln" method="post">
+            <h1><b><i>Admin Login</i></b></h1>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="aname" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="pwd" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>
